@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+     GOBERNACION DE BOLIVAR
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div class="imagen-logo">
+    <img class="centrar" src="../../assets/imgs/logoweb.png" style="width: 248px;">
+    <label class="item item-input" ><strong style="font-size: 18px;">Código QR</strong></label>
+</div>
+<div class="imagen-logo">
+    <button ion-button color="danger" (click)="scanner()">Escanear</button>
+</div>
+<br>
+<br>
+<br>
+
+<ion-list border>
+
+  <ion-item >
+    <ion-label  color="danger" floating>Serial</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item >
+    <ion-label  color="danger" floating>Cedula</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+</ion-content>
